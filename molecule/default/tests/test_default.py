@@ -10,7 +10,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts("all")
 
 
-@pytest.mark.parametrize("x", [True])
-def test_packages(host, x):
-    """Run a dummy test, just to show what one would look like."""
-    assert x
+@pytest.mark.parametrize("f", ["/var/cyhy/ncats-webui"])
+def test_files(host, f):
+    """Test that the expected files and directories are present."""
+    assert host.file(f).exists

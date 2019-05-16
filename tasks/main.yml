@@ -1,2 +1,20 @@
 ---
-# tasks file for skeleton
+# tasks file for cyhy_dashboard
+
+#
+# Grab the ncats-webui code
+#
+- name: Create /var/cyhy/ncats-webui directory
+  file:
+    path: /var/cyhy/ncats-webui
+    state: directory
+    mode: 0760
+
+- name: Download and untar the webui tarball
+  unarchive:
+    src: "https://api.github.com/repos/jsf9k/ncats-webui/tarball/develop?\
+    access_token={{ github_oauth_token }}"
+    dest: /var/cyhy/ncats-webui
+    remote_src: yes
+    extra_opts:
+      - "--strip-components=1"
