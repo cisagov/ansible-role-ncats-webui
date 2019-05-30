@@ -5,7 +5,7 @@
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-ncats-webui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webui/context:python)
 
 An Ansible role for installing
-[jsf9k/ncats-webui](https://github.com/cisagov/ncats-webui).
+[jsf9k/ncats-webui](https://github.com/jsf9k/ncats-webui).
 
 ## Requirements ##
 
