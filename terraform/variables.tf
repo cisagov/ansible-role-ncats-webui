@@ -18,4 +18,3 @@ variable "ssm_parameters" {
   description = "The AWS SSM parameters that the IAM user needs to be able to read."
   default     = ["/github/oauth_token"]
 }
-

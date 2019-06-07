@@ -42,4 +42,3 @@ resource "aws_iam_user_policy" "ssm_policy" {
   user   = aws_iam_user.user.id
   policy = data.aws_iam_policy_document.ssm_parameter_doc[count.index].json
 }
-
