@@ -12,8 +12,7 @@
 
 - name: Download and untar the webui tarball
   unarchive:
-    src: "https://api.github.com/repos/jsf9k/ncats-webui/tarball/develop?\
-    access_token={{ github_oauth_token }}"
+    src: "https://api.github.com/repos/cisagov/ncats-webui/tarball/develop"
     dest: /var/cyhy/ncats-webui
     remote_src: yes
     extra_opts:
