@@ -1,6 +1,6 @@
 # ansible-role-ncats-webui #
 
-[![Build Status](https://travis-ci.com/cisagov/ansible-role-ncats-webui.svg?branch=develop)](https://travis-ci.com/cisagov/ansible-role-ncats-webui)
+[![GitHub Build Status](https://github.com/cisagov/ansible-role-ncats-webui/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webui/actions)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-ncats-webui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webui/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-ncats-webui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webui/context:python)
 
