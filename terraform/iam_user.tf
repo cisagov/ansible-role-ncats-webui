@@ -10,6 +10,6 @@ module "iam_user" {
   }
 
   entity         = "ansible-role-ncats-webui"
-  ssm_parameters = ["/github/oauth_token", "/cyhy/core/geoip/license_key"]
+  ssm_parameters = ["/github/oauth_token"]
   tags           = var.tags
 }
