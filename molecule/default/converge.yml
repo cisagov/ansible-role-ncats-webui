@@ -1,5 +1,7 @@
 ---
 - name: Converge
   hosts: all
-  roles:
-    - role: ansible-role-ncats-webui
+  tasks:
+    - name: Include ansible-role-ncats-webui
+      ansible.builtin.include_role:
+        name: ansible-role-ncats-webui
