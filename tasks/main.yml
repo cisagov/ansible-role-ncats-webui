@@ -6,7 +6,7 @@
   ansible.builtin.file:
     path: /var/cyhy/ncats-webui
     state: directory
-    mode: 0760
+    mode: 0750
 
 - name: Download and untar the ncats-webui tarball
   ansible.builtin.unarchive:
