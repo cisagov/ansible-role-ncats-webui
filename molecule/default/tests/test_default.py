@@ -12,7 +12,18 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts("all")
 
 
-@pytest.mark.parametrize("f", ["/var/cyhy/ncats-webui"])
-def test_files(host, f):
-    """Test that the expected files and directories are present."""
-    assert host.file(f).exists
+@pytest.mark.parametrize(
+    "directory", [{"mode": "0o750", "path": "/var/cyhy/ncats-webui"}]
+)
+def test_directories(host, directory):
+    """Test that the appropriate directories were created."""
+    assert host.file(directory["path"]).exists
+    assert host.file(directory["path"]).is_directory
+    assert oct(host.file(directory["path"]).mode) == directory["mode"]
+
+
+@pytest.mark.parametrize("file", [{"path": "/var/cyhy/ncats-webui/docker-compose.yml"}])
+def test_files(host, file):
+    """Test that the appropriate files were created."""
+    assert host.file(file["path"]).exists
+    assert host.file(file["path"]).is_file
