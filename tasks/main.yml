@@ -8,7 +8,7 @@
     state: directory
     mode: 0760
 
-- name: Download and untar the webui tarball
+- name: Download and untar the ncats-webui tarball
   ansible.builtin.unarchive:
     src: https://api.github.com/repos/cisagov/ncats-webui/tarball/develop
     dest: /var/cyhy/ncats-webui
