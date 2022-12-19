@@ -1,8 +1,7 @@
 # ansible-role-ncats-webui #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-ncats-webui/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webui/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-ncats-webui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webui/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-ncats-webui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webui/context:python)
+[![CodeQL](https://github.com/cisagov/ansible-role-ncats-webui/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webui/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing
 [ncats-webui](https://github.com/cisagov/ncats-webui).
@@ -34,8 +33,10 @@ Here's how to use it in a playbook:
 - hosts: all
   become: yes
   become_method: sudo
-  roles:
-    - ncats_webui
+  tasks:
+    - name: Install the NCATS WebUI Docker configuration
+      ansible.builtin.include_role:
+        name: ncats_webui
 ```
 
 ## Contributing ##
