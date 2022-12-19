@@ -36,4 +36,6 @@ galaxy_info:
         - jammy
   role_name: ncats_webui
 
-dependencies: []
+dependencies:
+  - name: docker
+    src: https://github.com/cisagov/ansible-role-docker
