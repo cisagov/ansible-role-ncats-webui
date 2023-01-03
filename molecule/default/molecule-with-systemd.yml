@@ -15,6 +15,7 @@ lint: |
   ansible-lint
   flake8
 platforms:
+  # Amazon Linux 2 doesn't appear to support Docker
   # - cgroupns_mode: host
   #   command: /lib/systemd/systemd
   #   image: geerlingguy/docker-amazonlinux2-ansible:latest
