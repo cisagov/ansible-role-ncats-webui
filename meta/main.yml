@@ -1,8 +1,11 @@
 ---
+dependencies:
+  - name: docker
+    src: https://github.com/cisagov/ansible-role-docker
 galaxy_info:
   author: Shane Frasier
-  description: Install ncats-webui.
   company: CISA Cyber Assessments
+  description: Install ncats-webui.
   galaxy_tags:
     - ncats
     - webui
@@ -26,7 +29,6 @@ galaxy_info:
         - bookworm
     - name: Fedora
       versions:
-        - "35"
         - "36"
         - "37"
     - name: Ubuntu
@@ -35,7 +37,3 @@ galaxy_info:
         - focal
         - jammy
   role_name: ncats_webui
-
-dependencies:
-  - name: docker
-    src: https://github.com/cisagov/ansible-role-docker
