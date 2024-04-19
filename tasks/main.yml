@@ -10,6 +10,11 @@
     path: /var/cyhy/ncats-webui
     state: directory
 
+- name: Install tar
+  ansible.builtin.package:
+    name:
+      - tar
+
 - name: Download and untar the ncats-webui tarball
   ansible.builtin.unarchive:
     dest: /var/cyhy/ncats-webui
