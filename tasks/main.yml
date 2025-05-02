@@ -5,7 +5,7 @@
 - name: Create the /var/cyhy/ncats-webui directory
   ansible.builtin.file:
     group: "{{ ncats_webui_file_owner_group | default(omit) }}"
-    mode: 0750
+    mode: u=rwx,g=rx,o=
     owner: "{{ ncats_webui_file_owner_username | default(omit) }}"
     path: /var/cyhy/ncats-webui
     state: directory
