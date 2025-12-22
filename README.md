@@ -1,6 +1,7 @@
 # ansible-role-ncats-webui #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-ncats-webui/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webui/actions)
+[![License](https://img.shields.io/github/license/cisagov/ansible-role-ncats-webui)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-ncats-webui/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webui/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing
